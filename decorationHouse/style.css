@@ -471,11 +471,13 @@ footer a {
     font-family: 'handjet';
     font-weight: 500;
     padding-bottom: 7px;
+	text-align: center;
 }
 
 .welcometext p{
     color: var(--h1color);
     font-family: 'open sans';
+	text-align: center;
 }
 
 .button-group button {
