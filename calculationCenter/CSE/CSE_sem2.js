@@ -29,7 +29,7 @@ function calculateCGPA() {
             document.getElementById("displaySGPA").textContent = `SGPA: ${sgpaPointer}`;
         } else {
             let previousCGPA = parseFloat(document.getElementById('cgpaInput').value);
-            let newCGPA = ((previousCGPA*20 + Number(sgpaPointer)*23) / 43).toFixed(2);
+            let newCGPA = ((previousCGPA * 20 + Number(sgpaPointer) * 23) / 43).toFixed(2);
             document.getElementById("displaySGPA").textContent = `SGPA: ${sgpaPointer} - CGPA: ${newCGPA}`;
         }
     } else document.getElementById("displaySGPA").textContent = `SGPA: ${sgpaPointer}`;
