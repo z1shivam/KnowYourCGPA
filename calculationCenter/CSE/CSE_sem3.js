@@ -29,9 +29,9 @@ function calculateCGPA() {
         document.getElementById("displaySGPA").textContent = `SGPA: ${sgpaPointer}`;}
         else {
         let previousCGPA = parseFloat(document.getElementById('cgpaInput').value);
-        let newCGPA = ((previousCGPA * 2 + Number(sgpaPointer)) / 3).toFixed(2);
+        let newCGPA = ((previousCGPA * 43 + Number(sgpaPointer)*20) / 63).toFixed(2);
 
-        document.getElementById("displaySGPA").textContent = `SGPA: ${sgpaPointer} - CGPA: ${newCGPA} (approx)`;
+        document.getElementById("displaySGPA").textContent = `SGPA: ${sgpaPointer} - CGPA: ${newCGPA}`;
 
       }}
       else document.getElementById("displaySGPA").textContent = `SGPA: ${sgpaPointer}`;
